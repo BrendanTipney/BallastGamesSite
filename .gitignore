@@ -1,0 +1,6 @@
+# Video files — host these externally (YouTube, Vimeo, etc.)
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv

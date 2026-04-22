@@ -3,26 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ballast Games — Cloudbreaker</title>
-  <meta name="description" content="Ballast Games is a two-person indie studio from Nova Scotia, Canada, currently developing Cloudbreaker — a roguelite survivors-like set in a sky-world." />
-  <meta property="og:title" content="Ballast Games — Cloudbreaker" />
-  <meta property="og:description" content="A roguelite where your inventory is your build. Rearrange items mid-combat to unleash synergies and defeat impossible waves." />
-  <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/3620890/capsule_616x353.jpg" />
-  <meta property="og:url" content="https://ballastgames.com" />
+  <title>Ballast Games — Indie Game Studio</title>
+  <meta name="description" content="Ballast Games is a two-person indie game studio from Nova Scotia, Canada. Currently developing Cloudbreaker, a roguelite survivors-like." />
+  <meta name="keywords" content="Ballast Games, indie game studio, Nova Scotia, Cloudbreaker, roguelite" />
+  <link rel="canonical" href="https://ballastgames.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ballast Games" />
+  <meta property="og:title" content="Ballast Games — Indie Game Studio" />
+  <meta property="og:description" content="A two-person indie game studio from Nova Scotia, Canada. Currently developing Cloudbreaker." />
+  <meta property="og:image" content="https://ballastgames.com/Cloudbreaker%20Public%20Press%20Kit/Key%20Art/Header_Capsule_920x430.png" />
+  <meta property="og:url" content="https://ballastgames.com/" />
+
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ballast Games — Indie Game Studio" />
+  <meta name="twitter:description" content="A two-person indie game studio from Nova Scotia, Canada. Currently developing Cloudbreaker." />
+  <meta name="twitter:image" content="https://ballastgames.com/Cloudbreaker%20Public%20Press%20Kit/Key%20Art/Header_Capsule_920x430.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ballast Games",
+    "url": "https://ballastgames.com/",
+    "description": "Ballast Games is a two-person indie game studio based in Nova Scotia, Canada, developing Cloudbreaker.",
+    "foundingLocation": { "@type": "Place", "name": "Nova Scotia, Canada" },
+    "email": "ballastgamesteam@gmail.com",
+    "member": [
+      { "@type": "Person", "name": "Brendan Tipney" },
+      { "@type": "Person", "name": "Anand Friesen" }
+    ],
+    "sameAs": [
+      "https://www.youtube.com/@Ballast-Games",
+      "https://bsky.app/profile/ballastgames.bsky.social",
+      "https://www.tiktok.com/@ballastgames",
+      "https://discord.gg/KbBuBHwGwa"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- ── NAV ── -->
 <nav>
-  <a class="nav-logo" href="#hero">Ballast<span>.</span>Games</a>
+  <a class="nav-logo" href="/">
+    <img src="Cloudbreaker%20Public%20Press%20Kit/Logos/team_logo_wide.png" alt="Ballast Games" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    <span class="nav-logo-text" style="display:none">Ballast Games</span>
+  </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#about">The Game</a></li>
-    <li><a href="#media">Media</a></li>
-    <li><a href="#studio">Studio</a></li>
-    <li><a href="#press">Press</a></li>
-    <li><a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener" class="nav-cta">Wishlist</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#about">Studio</a></li>
+    <li><a href="#socials">Links</a></li>
+    <li><a href="mailto:ballastgamesteam@gmail.com" class="nav-cta">Contact</a></li>
   </ul>
   <div class="nav-burger" id="navBurger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
@@ -31,231 +65,160 @@
 
 <!-- ── HERO ── -->
 <section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Ballast Games Presents</p>
-    <h1 class="hero-title">Cloudbreaker</h1>
-    <p class="hero-tagline">
-      <strong>Your inventory is your build.</strong>
-      Rearrange relics mid-combat to unleash synergies and
-      defeat impossible waves in a vast, crumbling sky-world.
-    </p>
-    <div class="hero-buttons">
-      <a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener" class="btn btn-primary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-        Wishlist on Steam
-      </a>
-      <a href="https://discord.gg/KbBuBHwGwa" target="_blank" rel="noopener" class="btn btn-secondary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-        Join Discord
-      </a>
-    </div>
+  <img
+    class="hero-logo"
+    src="Cloudbreaker%20Public%20Press%20Kit/Logos/team_logo_with_words.png"
+    alt="Ballast Games"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+  />
+  <div class="hero-logo-fallback" style="display:none">Ballast Games</div>
+  <p class="hero-tagline">
+    A two-person indie game studio<br/>from Nova Scotia, Canada.
+  </p>
+  <div class="btn-row">
+    <a href="#games" class="btn btn-primary">Our Games</a>
+    <a href="#about" class="btn btn-secondary">About Us</a>
   </div>
-  <div class="hero-scroll">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-    Scroll
+</section>
+
+<!-- ── GAMES ── -->
+<section id="games">
+  <div class="section-inner">
+    <p class="section-label">Games</p>
+    <h2 class="section-title">Our Games</h2>
+    <div class="section-rule"></div>
+    <div class="games-grid">
+
+      <div class="game-card">
+        <div class="game-card-image">
+          <img
+            src="Cloudbreaker%20Public%20Press%20Kit/Key%20Art/Header_Capsule_920x430.png"
+            alt="Cloudbreaker"
+            loading="lazy"
+          />
+        </div>
+        <div class="game-card-body">
+          <p class="game-card-status">In Development — Coming September 2026 to PC</p>
+          <h3 class="game-card-title">Cloudbreaker</h3>
+          <p class="game-card-desc">
+            An inventory management action-roguelite. Upgrade, rearrange, and synergize
+            your layout mid-run. Explore a sky-world, survive waves of enemies, and
+            unlock new airships to grow your power over time.
+          </p>
+          <div class="game-card-tags">
+            <span class="tag">Roguelite</span>
+            <span class="tag">Survivors-like</span>
+            <span class="tag">Inventory Management</span>
+            <span class="tag">Bullet Hell</span>
+          </div>
+          <div class="btn-row" style="justify-content:flex-start; gap: 0.75rem;">
+            <a href="cloudbreaker.html" class="btn btn-primary">Learn More</a>
+            <a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener" class="btn btn-secondary">Wishlist on Steam</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- ── ABOUT ── -->
 <section id="about">
   <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-text">
-        <p class="section-label">The Game</p>
-        <h2 class="section-title">Build. Rearrange. Survive.</h2>
-        <div class="section-divider"></div>
+    <p class="section-label">Studio</p>
+    <h2 class="section-title">Who We Are</h2>
+    <div class="section-rule"></div>
+
+    <div class="about-team-grid">
+      <div class="about-team-text">
         <p>
-          <strong>Cloudbreaker</strong> is a roguelite, inventory management, survivors-like.
-          Explore a sky-world, finding relics and defeating hordes of enemies.
+          Ballast Games is <strong>Brendan Tipney</strong> and <strong>Anand Friesen</strong> —
+          a two-person indie studio based in Nova Scotia, Canada.
         </p>
         <p>
-          Unlock and upgrade airships, each with its own unique layout, abilities, and
-          strategies. Place Engine Parts into your ship's grid — strategic positioning
-          creates powerful synergies that define your run.
+          We care about tight, satisfying game feel. Every mechanic should feel good
+          to interact with, every run should feel meaningfully different, and every
+          system should reward thinking. Cloudbreaker is the game we wanted to play.
         </p>
         <p>
-          Descend through cloud layers, discovering ruins and battling enemies called
-          Biotes. Earn resources, upgrade your loadout, and face boss encounters that
-          test every decision you've made.
+          We're building it the way we'd want to experience it — deep systems, clean
+          presentation, and a world worth exploring.
         </p>
-        <div class="about-tags">
-          <span class="tag">Roguelite</span>
-          <span class="tag">Survivors-like</span>
-          <span class="tag">Inventory Management</span>
-          <span class="tag">Bullet Hell</span>
-          <span class="tag">Twin-Stick Shooter</span>
-          <span class="tag">Pixel Art</span>
-          <span class="tag">Top-Down</span>
+        <div class="team-names">
+          <div class="team-name">Brendan Tipney <span>— Development & Design</span></div>
+          <div class="team-name">Anand Friesen <span>— Development & Design</span></div>
         </div>
       </div>
-      <div class="about-image">
+      <div class="team-photo-wrap">
         <img
-          src="https://cdn.akamai.steamstatic.com/steam/apps/3620890/header.jpg"
-          alt="Cloudbreaker key art"
+          src="Cloudbreaker%20Public%20Press%20Kit/Team/PSY06069_Processed.png"
+          alt="Brendan Tipney and Anand Friesen — Ballast Games"
           loading="lazy"
         />
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ── FEATURES ── -->
-<section id="features">
-  <div class="section-inner">
-    <p class="section-label">Features</p>
-    <h2 class="section-title">What Makes Cloudbreaker</h2>
-    <div class="section-divider"></div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <span class="feature-icon">🗂️</span>
-        <h3>Inventory as Your Build</h3>
-        <p>Your ship's Engine Grid is an inventory puzzle. Where you place parts matters — adjacency and orientation unlock powerful synergies.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">✈️</span>
-        <h3>Multiple Airships</h3>
-        <p>Unlock airships with distinct hull layouts, unique abilities, and individual upgrade trees. Each ship demands a different strategy.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">🌩️</span>
-        <h3>Sky-World Exploration</h3>
-        <p>Traverse a vast sky filled with cloud layers, ancient ruins, and islands. Every run reveals new discoveries and dangers.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">💥</span>
-        <h3>Horde Combat</h3>
-        <p>Face relentless waves of Biotes in twin-stick bullet-hell combat. Rearrange your build mid-combat to counter what the sky throws at you.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">🏆</span>
-        <h3>Boss Encounters</h3>
-        <p>Every run culminates in punishing boss fights that test your build, your skill, and the choices you've made along the way.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">🔧</span>
-        <h3>Deep Upgrades</h3>
-        <p>Individual upgrade paths for ships, weapons, and relics. No two runs play the same — theory-craft endless combinations.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── MEDIA ── -->
-<section id="media">
-  <div class="section-inner">
-    <p class="section-label">Media</p>
-    <h2 class="section-title">See It In Action</h2>
-    <div class="section-divider"></div>
-    <div class="trailer-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/f436rC0YxR8"
-        title="Cloudbreaker Gameplay Trailer"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </div>
-    <div class="screenshots-grid">
-      <div class="screenshot">
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/3620890/ss_1.jpg" alt="Cloudbreaker screenshot 1" loading="lazy" onerror="this.parentElement.style.background='#121525'" />
-      </div>
-      <div class="screenshot">
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/3620890/ss_2.jpg" alt="Cloudbreaker screenshot 2" loading="lazy" onerror="this.parentElement.style.background='#121525'" />
-      </div>
-      <div class="screenshot">
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/3620890/ss_3.jpg" alt="Cloudbreaker screenshot 3" loading="lazy" onerror="this.parentElement.style.background='#121525'" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── STUDIO ── -->
-<section id="studio">
-  <div class="section-inner">
-    <div class="studio-grid">
-      <div class="studio-text">
-        <p class="section-label">The Studio</p>
-        <h2 class="section-title">Ballast Games</h2>
-        <div class="section-divider"></div>
+    <div class="about-press-grid">
+      <div>
+        <p class="section-label">Press</p>
+        <h2 class="section-title" style="font-size:1.6rem;">Press Enquiries</h2>
+        <div class="section-rule"></div>
         <p>
-          We're a two-person indie studio based in <strong>Nova Scotia, Canada</strong>,
-          currently deep in development on our first game, Cloudbreaker.
+          Logos, screenshots, key art, GIFs, and trailers are all available in our
+          press kit. Reach out directly for interviews, coverage, or builds.
         </p>
-        <p>
-          We care about tight, satisfying game feel — every mechanic should feel good
-          to interact with, and every run should feel meaningfully different. Cloudbreaker
-          is the game we wanted to play.
-        </p>
-        <div class="studio-links">
-          <a href="mailto:ballastgamesteam@gmail.com" class="studio-link-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            ballastgamesteam@gmail.com
-          </a>
+        <div class="contact-block">
+          <a href="https://drive.google.com/drive/folders/12j3mb61H9Zr8Zn95ftoivJDd6WTcMDtX?usp=sharing" target="_blank" rel="noopener">Press Kit</a>
+          <a href="mailto:ballastgamesteam@gmail.com">Contact Us</a>
         </div>
       </div>
-      <div class="studio-card">
-        <h3>Find Us Online</h3>
-        <p>Follow development, watch clips, and join the community across our channels.</p>
-        <div class="social-grid">
-          <a href="https://discord.gg/KbBuBHwGwa" target="_blank" rel="noopener" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-            Discord
-          </a>
-          <a href="https://www.youtube.com/@Ballast-Games" target="_blank" rel="noopener" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            YouTube
-          </a>
-          <a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.503 1.009 2.459-.397.957-1.497 1.41-2.455 1.008zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.252 0-2.265-1.014-2.265-2.265z"/></svg>
-            Steam
-          </a>
-          <a href="https://bsky.app/profile/ballastgames.bsky.social" target="_blank" rel="noopener" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C3.196 1.797 1.5 1.5 1.5 3.78c0 .5.30 4.098.48 4.683.65 2.217 3.021 2.783 5.148 2.421-3.503.571-4.257 2.462-2.464 4.348 3.814 3.917 5.1.62 6.336-2.327C11.28 15.25 12 16.343 12 16.343s.72-1.093 1-.818c1.236 2.947 2.522 6.244 6.336 2.327 1.793-1.886 1.039-3.777-2.464-4.348 2.127.362 4.498-.204 5.148-2.421.18-.585.48-4.183.48-4.683 0-2.28-1.696-1.983-3.702-.975C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
-            Bluesky
-          </a>
-          <a href="https://www.tiktok.com/@ballastgames" target="_blank" rel="noopener" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.34a8.19 8.19 0 0 0 4.79 1.52V7.41a4.85 4.85 0 0 1-1.02-.72z"/></svg>
-            TikTok
-          </a>
-          <a href="mailto:ballastgamesteam@gmail.com" class="social-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            Email
-          </a>
+      <div>
+        <p class="section-label">Contact</p>
+        <h2 class="section-title" style="font-size:1.6rem;">Get In Touch</h2>
+        <div class="section-rule"></div>
+        <p>
+          For press, partnerships, or just to say hello — we're a small team and
+          we read everything.
+        </p>
+        <div class="contact-block">
+          <a href="mailto:ballastgamesteam@gmail.com">ballastgamesteam@gmail.com</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── PRESS ── -->
-<section id="press">
+<!-- ── SOCIALS ── -->
+<section id="socials">
   <div class="section-inner">
-    <p class="section-label">Press</p>
-    <h2 class="section-title">Press & Media Kit</h2>
-    <div class="section-divider"></div>
-    <p style="color:var(--muted); max-width:600px; margin-bottom: 0.5rem;">
-      Logos, screenshots, GIFs, key art, and fact sheet are available in our press kit.
-      For press enquiries, reach us at
-      <a href="mailto:ballastgamesteam@gmail.com">ballastgamesteam@gmail.com</a>.
-    </p>
-    <div class="press-grid">
-      <div class="press-card">
-        <h3>Press Kit</h3>
-        <p>Full asset library including logos, screenshots, key art, GIFs, and trailers.</p>
-        <a href="https://drive.google.com/drive/folders/12j3mb61H9Zr8Zn95ftoivJDd6WTcMDtX?usp=sharing" target="_blank" rel="noopener">Open Press Kit →</a>
-      </div>
-      <div class="press-card">
-        <h3>Quick Facts</h3>
-        <p>
-          <strong style="color:var(--text)">Developer:</strong> Ballast Games<br/>
-          <strong style="color:var(--text)">Location:</strong> Nova Scotia, Canada<br/>
-          <strong style="color:var(--text)">Team Size:</strong> 2<br/>
-          <strong style="color:var(--text)">Platform:</strong> PC (Windows, SteamOS)<br/>
-          <strong style="color:var(--text)">Status:</strong> In Development<br/>
-          <strong style="color:var(--text)">Genre:</strong> Roguelite, Survivors-like
-        </p>
-      </div>
+    <p class="section-label">Links</p>
+    <h2 class="section-title">Find Us</h2>
+    <div class="section-rule"></div>
+    <div class="socials-grid">
+      <a href="https://discord.gg/KbBuBHwGwa" target="_blank" rel="noopener" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        Discord
+      </a>
+      <a href="https://www.youtube.com/@Ballast-Games" target="_blank" rel="noopener" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="https://bsky.app/profile/ballastgames.bsky.social" target="_blank" rel="noopener" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C3.196 1.797 1.5 1.5 1.5 3.78c0 .5.30 4.098.48 4.683.65 2.217 3.021 2.783 5.148 2.421-3.503.571-4.257 2.462-2.464 4.348 3.814 3.917 5.1.62 6.336-2.327C11.28 15.25 12 16.343 12 16.343s.72-1.093 1-.818c1.236 2.947 2.522 6.244 6.336 2.327 1.793-1.886 1.039-3.777-2.464-4.348 2.127.362 4.498-.204 5.148-2.421.18-.585.48-4.183.48-4.683 0-2.28-1.696-1.983-3.702-.975C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
+        Bluesky
+      </a>
+      <a href="https://www.tiktok.com/@ballastgames" target="_blank" rel="noopener" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.34a8.19 8.19 0 0 0 4.79 1.52V7.41a4.85 4.85 0 0 1-1.02-.72z"/></svg>
+        TikTok
+      </a>
+      <a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0z"/></svg>
+        Steam
+      </a>
+      <a href="mailto:ballastgamesteam@gmail.com" class="social-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
     </div>
   </div>
 </section>
@@ -263,13 +226,11 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Ballast<span>.</span>Games</div>
+    <span class="footer-logo">Ballast Games</span>
     <ul class="footer-links">
-      <li><a href="https://store.steampowered.com/app/3620890/Cloudbreaker/" target="_blank" rel="noopener">Steam</a></li>
-      <li><a href="https://discord.gg/KbBuBHwGwa" target="_blank" rel="noopener">Discord</a></li>
-      <li><a href="https://www.youtube.com/@Ballast-Games" target="_blank" rel="noopener">YouTube</a></li>
-      <li><a href="https://bsky.app/profile/ballastgames.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
-      <li><a href="https://www.tiktok.com/@ballastgames" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#about">Studio</a></li>
+      <li><a href="https://drive.google.com/drive/folders/12j3mb61H9Zr8Zn95ftoivJDd6WTcMDtX?usp=sharing" target="_blank" rel="noopener">Press Kit</a></li>
       <li><a href="mailto:ballastgamesteam@gmail.com">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2025 Ballast Games. All rights reserved.</p>
