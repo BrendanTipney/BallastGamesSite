@@ -51,20 +51,22 @@ nav {
 .nav-logo {
   display: flex;
   align-items: center;
-  height: 32px;
+  gap: 0.75rem;
+  height: 40px;
+  color: var(--text);
 }
 
 .nav-logo img {
-  height: 100%;
-  width: auto;
+  height: 32px;
+  width: 32px;
   object-fit: contain;
 }
 
-.nav-logo-text {
+.nav-logo-wordmark {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text);
 }
@@ -130,9 +132,9 @@ nav {
 }
 
 .hero-logo {
-  height: 80px;
+  height: 160px;
   width: auto;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2rem;
 }
 
 .hero-logo-fallback {
@@ -274,27 +276,28 @@ section { padding: 6rem 2rem; }
 }
 
 .games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1px;
+  background: var(--border);
   border: 1px solid var(--border);
   margin-top: 3rem;
 }
 
 .game-card {
   background: var(--bg-3);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   transition: background 0.2s;
+  min-height: 360px;
 }
 
-.game-card:hover { background: #161616; }
+.game-card:hover { background: #141414; }
 
 .game-card-image {
-  aspect-ratio: 16/9;
   overflow: hidden;
-  border-bottom: 1px solid var(--border);
   background: #0a0a0a;
+  position: relative;
 }
 
 .game-card-image img {
@@ -302,16 +305,19 @@ section { padding: 6rem 2rem; }
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: filter 0.3s;
+  transition: filter 0.4s, transform 0.6s;
 }
 
-.game-card:hover .game-card-image img { filter: grayscale(60%); }
+.game-card:hover .game-card-image img {
+  filter: grayscale(40%);
+  transform: scale(1.03);
+}
 
 .game-card-body {
-  padding: 1.75rem;
-  flex: 1;
+  padding: 2.5rem 2.75rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .game-card-status {
@@ -325,16 +331,16 @@ section { padding: 6rem 2rem; }
 }
 
 .game-card-title {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
 }
 
 .game-card-desc {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.7;
-  flex: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -727,6 +733,10 @@ footer {
   .socials-grid { grid-template-columns: repeat(2, 1fr); }
   .press-two-col { grid-template-columns: 1fr; }
   .screenshots-grid { grid-template-columns: 1fr 1fr; }
+  .game-card { grid-template-columns: 1fr; min-height: 0; }
+  .game-card-image { aspect-ratio: 16/9; }
+  .game-card-body { padding: 2rem; }
+  .game-card-title { font-size: 1.7rem; }
 }
 
 @media (max-width: 640px) {

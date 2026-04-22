@@ -4,3 +4,6 @@
 *.webm
 *.avi
 *.mkv
+
+# Claude Code workspace config
+.claude/
