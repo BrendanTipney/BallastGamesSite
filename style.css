@@ -168,9 +168,9 @@ nav {
 }
 
 .hero-game-logo {
-  height: 150px;
-  width: auto;
-  max-width: 90%;
+  height: auto;
+  width: 580px;
+  max-width: 88vw;
   margin: 0 auto 2rem;
 }
 
@@ -621,6 +621,10 @@ section { padding: 6rem 2rem; }
 }
 
 .screenshot:hover img { filter: grayscale(0%); }
+
+@media (hover: none) {
+  .screenshot img { filter: grayscale(0%); }
+}
 
 /* ── GAME PAGE: PRESS ── */
 #game-press {
