@@ -310,7 +310,7 @@ section { padding: 6rem 2rem; }
 }
 
 .game-card:hover .game-card-image img {
-  filter: grayscale(40%);
+  filter: grayscale(1%);
   transform: scale(1.03);
 }
 
