@@ -624,6 +624,7 @@ section { padding: 6rem 2rem; }
 
 @media (hover: none) {
   .screenshot img { filter: grayscale(0%); }
+  .game-card-image img { filter: grayscale(0%); }
 }
 
 /* ── GAME PAGE: PRESS ── */
