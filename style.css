@@ -659,7 +659,7 @@ section { padding: 6rem 2rem; }
 .press-card ul { list-style: none; }
 
 .press-card ul li::before {
-  content: '— ';
+  content: '• ';
   color: var(--muted-2);
 }
 
